@@ -1,0 +1,28 @@
+<!--pages/home.wxml-->
+<view class="home-main">
+  <!-- 获取用户信息 -->
+  <!-- <block wx:if="{{!hasUserInfo}}">
+    <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+    <button wx:else open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  </block> -->
+
+  <!-- 主布局 -->
+  <recycle-view batch="{{batchSetRecycleData}}" id="recycleId">
+    <view>
+      <image class="top-image" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg" mode="aspectFill"></image>
+    </view>
+    <recycle-item wx:for="{{recycleList}}" wx:key="id">
+      <view class="cutting-line"></view>
+      <view class="scroll-item">
+        <image class="scroll-item-image" mode="aspectFill" src="{{item.imageUrl}}"></image>
+        <view class="scroll-item-contents">
+          <text class="scroll-item-contents__title">{{item.title}}</text>
+          <view style="display: flex;flex-direction: row;">
+            <text class="scroll-item-contents__time">{{item.time}}</text>
+            <button class="scroll-item-contents__btn" size="mini" type="primary" bindtap="onDetailClick" data-id="{{item.id}}">点我吃瓜</button>
+          </view>
+        </view>
+      </view>
+    </recycle-item>
+  </recycle-view>
+</view>

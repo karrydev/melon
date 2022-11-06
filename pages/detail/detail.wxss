@@ -1,0 +1,23 @@
+/* pages/detail/detail.wxss */
+.detail-main {
+  padding: 20rpx;
+}
+
+.detail-title {
+  margin: 20rpx;
+}
+
+.detail-image {
+  width: calc(100% - 80rpx);
+  margin: 25rpx 40rpx;
+}
+
+.detail-contents-box {
+  margin: 0 40rpx;
+}
+
+.detail-contents {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  font-weight: 300;
+}

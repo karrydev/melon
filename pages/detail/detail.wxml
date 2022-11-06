@@ -1,0 +1,11 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-main">
+  <view class="detail-title">
+    <text user-select="true">{{melonDetail.title}}</text>
+  </view>
+  <view class="cutting-line"></view>
+  <image class="detail-image" mode="widthFix" src="{{melonDetail.imageUrl}}"></image>
+  <view class="detail-contents-box">
+    <text class="detail-contents" user-select="true">{{melonDetail.contents}}</text>
+  </view>
+</view>
