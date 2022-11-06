@@ -19,7 +19,7 @@ Page({
   onLoad(options) {
     this.setData({
       id: options.id,
-      ['melonDetail.title']: this.data.melonDetail.title + options.id
+      ["melonDetail.title"]: this.data.melonDetail.title + options.id,
     });
   },
   /**
